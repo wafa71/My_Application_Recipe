@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+        <ImageView
+            android:layout_width="20dp"
+            android:src="@drawable/chef"
+            android:layout_height="20dp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="@color/pinkbaby"
+            android:typeface="serif"
+            android:textStyle="bold"
+            android:shadowColor="@color/pinkdark"
+            android:shadowRadius="2"
+            android:shadowDx="1"
+            android:shadowDy="1"
+
+
+            />
+        <Spinner
+            android:id="@+id/spinner_tags"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/tags"
+            android:gravity="center"
+            android:layout_alignParentEnd="true"
+            />
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerList"
+        android:layout_width="match_parent"
+        android:layout_margin="4dp"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

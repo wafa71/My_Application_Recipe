@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+ android:id="@+id/listcardrandom"
+    android:layout_margin="10dp"
+app:cardCornerRadius="20dp"
+    app:cardBackgroundColor="@color/pinkbaby">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/textView_title"
+        android:text="Dish name"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:textStyle="bold"
+        android:padding="8dp"
+        android:textSize="24sp"
+        android:textColor="@color/pinkdark"
+        android:layout_height="wrap_content"/>
+<ImageView
+    android:layout_width="match_parent"
+    android:id="@+id/imageView_food"
+    android:scaleType="centerCrop"
+    android:layout_margin="8dp"
+    
+    android:layout_height="200dp"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <ImageView
+            android:src="@drawable/ic_baseline_groups_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/textView_servings"
+            android:text="3 personnes "
+            android:padding="8dp"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <ImageView
+            android:src="@drawable/ic_baseline_thumb_up_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/textView_likes"
+            android:text="4 personnes  "
+            android:padding="8dp"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <ImageView
+            android:src="@drawable/ic_baseline_access_time_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/textView_time"
+            android:text="1hour"
+            android:padding="8dp"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    
+</LinearLayout>
+</LinearLayout>
+
+</androidx.cardview.widget.CardView>
