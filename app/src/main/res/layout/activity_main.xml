@@ -20,12 +20,13 @@
 
             />
         <TextView
+            android:id="@id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/app_name"
             android:textColor="@color/pinkbaby"
             android:typeface="serif"
-            android:textStyle="bold"
+            android:textStyle="italic"
             android:shadowColor="@color/pinkdark"
             android:shadowRadius="2"
             android:shadowDx="1"
@@ -33,21 +34,40 @@
 
 
             />
-        <Spinner
-            android:id="@+id/spinner_tags"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:entries="@array/tags"
-            android:gravity="center"
-            android:layout_alignParentEnd="true"
-            />
+
+            <Spinner
+                android:id="@+id/spinner_tags"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:entries="@array/tags"
+                android:gravity="center"
+                tools:ignore="TouchTargetSizeCheck" />
         </RelativeLayout>
 
     </androidx.appcompat.widget.Toolbar>
+
+    <androidx.cardview.widget.CardView
+        app:cardElevation="8dp"
+    android:layout_margin="8dp"
+    android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchView_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:iconifiedByDefault="false"
+            android:textAlignment="center"
+            android:visibility="visible"
+            app:queryHint="search recipe ..." />
+
+</androidx.cardview.widget.CardView>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerList"
         android:layout_width="match_parent"
-        android:layout_margin="4dp"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:layout_margin="4dp" />
 
 </LinearLayout>
