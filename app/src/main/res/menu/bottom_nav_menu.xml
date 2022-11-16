@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/home"
+        android:title="Home"
+        android:iconTint="@color/white"
+        android:icon="@drawable/ic_baseline_home_24"/>
+<!--    <item android:id="@+id/favmenu"-->
+<!--        android:iconTint="@color/white"-->
+<!--        android:title="add recipe"-->
+<!--        android:icon="@drawable/ic_baseline_thumb_up_24"/>-->
+    <item android:id="@+id/listper"
+        android:iconTint="@color/white"
+        android:title="personnal recipe"
+        android:icon="@drawable/ic_baseline_thumb_up_24"/>
+</menu>
