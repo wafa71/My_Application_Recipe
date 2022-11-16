@@ -1,20 +1,32 @@
 <resources>
     <string name="app_name">My Application Recipe</string>
     <string name="api_key">b410433009be480084733e506a5c607d</string>
-<string-array name="tags">
-    <item>main course</item>
-    <item>side dish</item>
-    <item>dessert</item>
-    <item>appetizer</item>
-    <item>salad</item>
-    <item>bread</item>
-    <item>breakfast</item>
-    <item>soup</item>
-    <item>beverage</item>
-    <item>sauce</item>
-    <item>marinade</item>
-    <item>fingerfood</item>
-    <item>snack</item>
-    <item>drink</item>
-</string-array>
+    <string name="title_activity_recipe_details">RecipeDetailsActivity</string>
+    <string name="first_fragment_label">First Fragment</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="previous">Previous</string>
+    <string name="add_r">Add recipe</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_menu">Menu</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string-array name="tags">
+        <item>main course</item>
+        <item>side dish</item>
+        <item>dessert</item>
+        <item>appetizer</item>
+        <item>salad</item>
+        <item>bread</item>
+        <item>breakfast</item>
+        <item>soup</item>
+        <item>beverage</item>
+        <item>sauce</item>
+        <item>marinade</item>
+        <item>fingerfood</item>
+        <item>snack</item>
+        <item>drink</item>
+    </string-array>
 </resources>
