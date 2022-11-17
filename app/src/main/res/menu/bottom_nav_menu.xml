@@ -11,5 +11,5 @@
     <item android:id="@+id/listper"
         android:iconTint="@color/white"
         android:title="personnal recipe"
-        android:icon="@drawable/ic_baseline_thumb_up_24"/>
+        android:icon="@drawable/ic_baseline_person_24"/>
 </menu>

@@ -6,6 +6,7 @@ import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
+import com.pusher.pushnotifications.PushNotifications;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -44,6 +45,8 @@ FirstFragment firstFragment = new FirstFragment();
 
 
     }});
+        PushNotifications.start(getApplicationContext(), "8a4d9439-71b2-4d73-bebf-97002403fb7a");
+        PushNotifications.addDeviceInterest("hello");
     }
 
 

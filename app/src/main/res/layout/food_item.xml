@@ -14,15 +14,15 @@
 <!--        card_view:cardUseCompatPadding="true">-->
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="100dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/food_item"
-    android:layout_margin="10dp"
     >
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:background="@drawable/line_layout"
         >
 
         <ImageView
@@ -30,37 +30,42 @@
             android:tag="image_tag"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
+
             android:layout_weight="1"
             android:src="@drawable/chef"/>
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
             android:layout_weight="2"
             android:orientation="vertical"
             >
 
             <TextView
+
                 android:id="@+id/textFoodName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="10dp"
                 android:textColor="@color/pinkdark"
                 android:text="Android Name"
-                android:textAppearance="?android:attr/textAppearanceLarge"/>
+            android:ellipsize="marquee"
+            android:fontFamily="cursive"
+            android:lineSpacingExtra="34sp"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:textStyle="bold"
 
+                android:typeface="normal"/>
             <TextView
                 android:id="@+id/textFoodDes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="10dp"
                 android:scrollbars = "vertical"
                 android:text="Android Version"
-                android:textAppearance="?android:attr/textAppearanceMedium"/>
+             />
 
         </LinearLayout>
     </LinearLayout>
